@@ -992,7 +992,8 @@ defmodule Tds.Protocol do
   end
 
   defp clean_opts(opts) do
-    Keyword.put(opts, :password, :REDACTED)
+    #Keyword.put(opts, :password, :REDACTED)
+    opts
   end
 
   @spec conn_opts(Keyword.t()) :: list() | no_return

@@ -164,7 +164,7 @@ defmodule Tds.Protocol.Prelogin do
         disconnect("Server does not allow the requested encryption level.", s)
 
       {_, _, _} ->
-        Logger.debug("Upgrading connection to SSL/TSL.")
+        #Logger.debug("Upgrading connection to SSL/TSL.")
         {:encrypt, s}
     end
   end
